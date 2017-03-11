@@ -1460,6 +1460,17 @@
 	        border-radius: 3px;
 }
 
+.bwp-button.sunset {
+	/*#ffc925
+	#f46a4e*/
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ffc925, #f46a4e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ffc925, #f46a4e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ffc925, #f46a4e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffc925, #f46a4e); /* Standard syntax */
+}
+
+
 .bwp-button.large {
 	padding: 17px 58px;
 	font-size: 14px;
