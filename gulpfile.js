@@ -97,9 +97,9 @@ gulp.task('html', function () {
  * IMAGE COMPRESSION TASK
  *-----------------------------------------------------------------*/
 gulp.task('imagemin', function () {
-	gulp.src('app/images/**/*')
+	gulp.src('app/img/**/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('app/images/**/*'))
+		.pipe(gulp.dest('build/img/**/*'))
 });
 
 /*-----------------------------------------------------------------
