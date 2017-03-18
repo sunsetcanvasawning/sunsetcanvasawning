@@ -15,6 +15,7 @@
 @import "cubeportfolio.css";
 @import "owl.carousel.css";
 @import "revolution.slider.css";
+@import "bounce-scoll-down-arrow.css";
 
 /**
  * Layout
@@ -63,7 +64,8 @@
 
 /* Layout
 -------------------------------------------------------------- */
-#main-content { padding: 0 0 110px 0; }
+#main-content { padding: 0; }
+/*#main-content { padding: 0 0 110px 0; }*/
 
 /* Sidebar Right (default) */
 #site-content { float: left; width: 68.376% }
@@ -2351,7 +2353,7 @@
 	/* Inner Pages */
 	#top-bar,
 	#sidebar { display: none; }
-	#main-content { padding: 0 0 70px 0 }
+	/*#main-content { padding: 0 0 70px 0 }*/
 	#featured-title { margin-bottom: 50px; }
 	#featured-title .featured-title-inner-wrap { padding: 40px 0; }
 	#featured-title .featured-title-heading { font-size: 28px; }
@@ -2385,7 +2387,7 @@
 	.bwp-contact-form .input-wrap input { margin-bottom: 10px; }
 
 	/* Inner Pages */
-	#main-content { padding: 0 0 50px 0; }
+	/*#main-content { padding: 0 0 50px 0; }*/
 	#featured-title { margin-bottom: 40px; }
 	.hentry .post-author .author-avatar { float: none; margin: 0 0 20px; }
 	.comment_wrap .gravatar { width: 50px; margin-right: 25px; }
