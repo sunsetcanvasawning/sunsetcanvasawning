@@ -4,8 +4,8 @@
  * Author: Will Diep
  */
 
-@import url("http://fonts.googleapis.com/css?family=Lato:400,400italic");
-@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 @import "reset.css";
 @import "animsition.css";
@@ -613,7 +613,7 @@
 }
 
 #main-slider .tp-bannertimer {
-	background: url("assets/img/slider/timer.png");
+	/*background: url("assets/img/slider/timer.png");*/
 	height: 2px;
 }
 
