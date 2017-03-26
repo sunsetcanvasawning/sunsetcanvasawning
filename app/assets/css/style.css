@@ -2331,6 +2331,10 @@
 }
 
 @media only screen and (max-width: 991px) {
+	img#greg-full-body {
+		width: 50%;
+	}
+
 	.services-section .custom-col { padding: 8% 6% 7%; }
 
 	/* Header */
