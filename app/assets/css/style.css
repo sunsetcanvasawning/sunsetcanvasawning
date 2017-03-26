@@ -680,6 +680,14 @@
 
 /* Section Custom
 -------------------------------------------------------------- */
+#shade-fabrics a {
+    color: #dc6231;
+}
+
+#shade-fabrics a:hover {
+    color: #ffc925;
+}
+
 .intro-section,
 .folio-section,
 .features-section,
