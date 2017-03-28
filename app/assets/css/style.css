@@ -680,6 +680,10 @@
 
 /* Section Custom
 -------------------------------------------------------------- */
+#main-content h3 {
+	text-align: center;
+}
+
 #shade-fabrics a {
     color: #dc6231;
 }
