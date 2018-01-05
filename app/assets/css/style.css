@@ -1474,7 +1474,7 @@
 	height: 5%;
 	line-height: 45px;
 	border-radius: 3px;
-	box-shadow: 4px 4px 4px #0a78aa;
+	/* box-shadow: 4px 4px 4px #0a78aa; */
 	cursor: pointer;
 	transform: rotate(90deg);
 	margin: 0;
@@ -2450,28 +2450,23 @@
 	.bwp-contact-form .input-wrap input { margin-bottom: 10px; }
 
 
-
-
-
-
-
-/* Fixed Button - Recent Work Galley
--------------------------------------------------------------- */
-.fixed-btn{
-	position: fixed;
-	bottom: 50%;
-	left: -25%;
-	background: #0FACF3;
-	width: 60%;
-	height: 6%;
-	line-height: 45px;
-	border-radius: 3px;
-	box-shadow: 4px 4px 4px #0a78aa;
-	cursor: pointer;
-	transform: rotate(90deg);
-	margin: 0;
-	padding: 0;
-}
+	/* Fixed Button - Recent Work Galley
+	-------------------------------------------------------------- */
+	.fixed-btn{
+		position: fixed;
+		bottom: 50%;
+		left: -25%;
+		background: #0FACF3;
+		width: 60%;
+		height: 6%;
+		line-height: 45px;
+		border-radius: 3px;
+		/* box-shadow: 4px 4px 4px #0a78aa; */
+		cursor: pointer;
+		transform: rotate(90deg);
+		margin: 0;
+		padding: 0;
+	}
 
 
 	/* Inner Pages */
