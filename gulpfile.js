@@ -102,6 +102,8 @@ gulp.task('imagemin', function () {
 		.pipe(gulp.dest('build/assets/img/'))
 });
 
+
+
 /*-----------------------------------------------------------------
  * BUILT TASKS
  *-----------------------------------------------------------------*/
@@ -123,13 +125,22 @@ gulp.task('build:copy', ['build:cleanfolder'], function () {
 gulp.task('build:remove', ['build:copy'], function (cb) {
 	del([
 		'build/scss/',
-		'build/uncomp-img/',
 		'build/js/!(*.min.js)'
 	], cb())
 });
 
 // Simple to default task - kicks off everything
 gulp.task('build', ['build:copy', 'build:remove']);
+
+//Task to run build server for testing final app
+gulp.task('build:serve', function () {
+	browserSync({
+		server: {
+			baseDir: './build/'
+		}
+	});
+});
+
 
 /*-----------------------------------------------------------------
  * BROWSER-SYNC TASK
@@ -144,14 +155,6 @@ gulp.task('browser-sync', function () {
 });
 
 
-//Task to run build server for testing final app
-gulp.task('build:serve', function () {
-	browserSync({
-		server: {
-			baseDir: './build/'
-		}
-	});
-});
 
 
 /*-----------------------------------------------------------------
@@ -169,4 +172,4 @@ gulp.task('watch', function () {
  * DEFAULT TASK - a task that calls other tasks
  *-----------------------------------------------------------------*/
 //gulp.task('default', ['scripts', 'styles', 'nunjucks', 'html', 'imagemin', 'browser-sync', 'watch']);
-gulp.task('default', ['scripts', 'styles', 'nunjucks', 'html', 'browser-sync', 'watch']);
+gulp.task('default', ['scripts', 'styles', 'imagemin', 'nunjucks', 'html', 'browser-sync', 'watch']);
