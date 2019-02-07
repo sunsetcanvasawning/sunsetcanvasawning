@@ -19,7 +19,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'> -->
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -177,55 +183,55 @@
             <div class="item-wrap cbp">
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/arcadia-louvered-shading-system/arcadia-carousel0.jpg"
+                  src="assets/img/products/arcadia-louvered-pergola/arcadia-carousel0.jpg"
                   alt="image"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/arcadia-louvered-shading-system/arcadia-carousel1.jpg"
+                  src="assets/img/products/arcadia-louvered-pergola/arcadia-carousel1.jpg"
                   alt="image"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/arcadia-louvered-shading-system/arcadia-carousel2.jpg"
+                  src="assets/img/products/arcadia-louvered-pergola/arcadia-carousel2.jpg"
                   alt="image"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/arcadia-louvered-shading-system/arcadia-carousel3.jpg"
+                  src="assets/img/products/arcadia-louvered-pergola/arcadia-carousel3.jpg"
                   alt="image"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/arcadia-louvered-shading-system/arcadia-carousel4.jpg"
+                  src="assets/img/products/arcadia-louvered-pergola/arcadia-carousel4.jpg"
                   alt="image"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/arcadia-louvered-shading-system/arcadia-carousel5.jpg"
+                  src="assets/img/products/arcadia-louvered-pergola/arcadia-carousel5.jpg"
                   alt="image"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/arcadia-louvered-shading-system/arcadia-carousel6.jpg"
+                  src="assets/img/products/arcadia-louvered-pergola/arcadia-carousel6.jpg"
                   alt="image"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/arcadia-louvered-shading-system/arcadia-carousel7.jpg"
+                  src="assets/img/products/arcadia-louvered-pergola/arcadia-carousel7.jpg"
                   alt="image"
                 />
               </div>
               <div class="cbp-item">
                 <img
-                  src="assets/img/products/arcadia-louvered-shading-system/arcadia-carousel8.jpg"
+                  src="assets/img/products/arcadia-louvered-pergola/arcadia-carousel8.jpg"
                   alt="image"
                 />
               </div>
@@ -345,29 +351,158 @@
         ></div>
       </div>
 
+      <style>
+        #brochures {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        #brochures img {
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+
+        .col4 {
+          width: 33.33333333%;
+          float: left;
+          position: relative;
+        }
+        .transition {
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+        }
+        body .container {
+          width: 70%;
+          margin: 0 auto;
+        }
+        .fx1 .item {
+          margin: 10px 0;
+        }
+
+        /* active on focus for accessibility tab navigation */
+
+        .fx1 .item {
+          padding-left: 5%;
+        }
+        .fx1 .item img {
+          padding: 0 !important;
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+        .fx1 a:hover .item img,
+        .fx1 a:focus .item img {
+          /* opacity: 1; */
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+        .fx1 h4,
+        .fx1 p {
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+        }
+        .fx1 a .item h4 {
+          font-family: "Raleway", sans-serif;
+          font-size: 16px;
+          position: absolute;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          position: absolute;
+          top: 42%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          text-align: center;
+          opacity: 0;
+        }
+        .fx1 a:hover .item h4,
+        .fx1 a:focus .item h4 {
+          opacity: 1;
+        }
+        .fx1 a .item p {
+          font-family: "Raleway", sans-serif;
+          font-size: 8px;
+          position: absolute;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          position: absolute;
+          top: 52%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          text-align: center;
+          opacity: 0;
+        }
+        .fx1 a:hover .item p,
+        .fx1 a:focus .item p {
+          opacity: 1;
+        }
+      </style>
+
       <div class="bwp-col-12 col">
-        <style>
-          #brochures {
-            display: flex;
-            justify-content: space-around;
-          }
-
-          #brochures img {
-            padding-left: 10%;
-            padding-right: 10%;
-          }
-        </style>
-
         <div class="bwp-heading">
           <h2 class="bwp-heading text-center">BROCHURES</h2>
           <div class="bwp-line center margin-bottom-40"></div>
         </div>
 
         <section id="brochures">
-          <div>
+          <div class="fx1">
+            <a href="assets/documents/arcadia/arcadia-brochure.pdf">
+              <div class="item col4">
+                <img
+                  class="transition img-responsive"
+                  src="assets/documents/arcadia/arcadia-brochure-img.png"
+                />
+                <!-- <h4>Arcadia Brochure</h4> -->
+                <!-- <p>Description</p> -->
+              </div>
+            </a>
+
+            <a
+              href="assets/documents/arcadia/arcadia-architechtural-binder-residential.pdf"
+            >
+              <div class="item col4">
+                <img
+                  class="transition img-responsive"
+                  src="assets/documents/arcadia/arcadia-architechtural-binder-residential-img.png"
+                />
+                <!-- <h4>Residential <br> Architechtural <br> Binder </h4> -->
+                <!-- <p>Description</p> -->
+              </div>
+            </a>
+
+            <a
+              href="assets/documents/arcadia/arcadia-architectrual-binder-commercial.pdf"
+            >
+              <div class="item col4">
+                <img
+                  class="transition img-responsive"
+                  src="assets/documents/arcadia/arcadia-architectrual-binder-commercial-img.png"
+                />
+                <!-- <h4>Commercial <br> Architechtural <br> Binder</h4> -->
+                <!-- <p>Description</p> -->
+              </div>
+            </a>
+          </div>
+
+          <!-- <div class="item col4">
             <a href="assets/documents/arcadia/arcadia-brochure.pdf"
-              ><img src="assets/documents/arcadia/arcadia-brochure-img.png"
-            /></a>
+              ><img
+                class="transition img-responsive"
+                src="assets/documents/arcadia/arcadia-brochure-img.png"
+              />
+            </a>
+            <h4>title image</h4>
+            <p>Description</p>
           </div>
 
           <div>
@@ -384,7 +519,7 @@
               ><img
                 src="assets/documents/arcadia/arcadia-architectrual-binder-commercial-img.png"
             /></a>
-          </div>
+          </div> -->
         </section>
       </div>
 
@@ -483,12 +618,17 @@
       <div class="cbp-item retractables-awnings">
         <div class="project-item">
           <div class="project-image">
-            <img src="assets/img/products/arcadia-louvered-shading-system/commercial-arcadia1.jpg" alt="image" />
+            <img
+              src="assets/img/products/arcadia-louvered-pergola/commercial-arcadia1.jpg"
+              alt="image"
+            />
           </div>
-          <div class="project-detail"><h4 class="title">Commercial Arcadia</h4></div>
+          <div class="project-detail">
+            <h4 class="title">Commercial Arcadia</h4>
+          </div>
           <a
             class="project-zoom cbp-lightbox"
-            href="assets/img/products/arcadia-louvered-shading-system/commercial-arcadia1.jpg"
+            href="assets/img/products/arcadia-louvered-pergola/commercial-arcadia1.jpg"
             data-title="Retractables Awnings 1"
           >
             <i class="fa fa-arrows-alt"></i>
@@ -501,12 +641,17 @@
       <div class="cbp-item retractables-awnings">
         <div class="project-item">
           <div class="project-image">
-            <img src="assets/img/products/arcadia-louvered-shading-system/commercial-arcadia2.jpg" alt="image" />
+            <img
+              src="assets/img/products/arcadia-louvered-pergola/commercial-arcadia2.jpg"
+              alt="image"
+            />
           </div>
-          <div class="project-detail"><h4 class="title">Commercial Arcadia</h4></div>
+          <div class="project-detail">
+            <h4 class="title">Commercial Arcadia</h4>
+          </div>
           <a
             class="project-zoom cbp-lightbox"
-            href="assets/img/products/arcadia-louvered-shading-system/commercial-arcadia2.jpg"
+            href="assets/img/products/arcadia-louvered-pergola/commercial-arcadia2.jpg"
             data-title="Retractables Awnings 1"
           >
             <i class="fa fa-arrows-alt"></i>
@@ -519,12 +664,17 @@
       <div class="cbp-item retractables-awnings">
         <div class="project-item">
           <div class="project-image">
-            <img src="assets/img/products/arcadia-louvered-shading-system/commercial-arcadia3.jpg" alt="image" />
+            <img
+              src="assets/img/products/arcadia-louvered-pergola/commercial-arcadia3.jpg"
+              alt="image"
+            />
           </div>
-          <div class="project-detail"><h4 class="title">Commercial Arcadia</h4></div>
+          <div class="project-detail">
+            <h4 class="title">Commercial Arcadia</h4>
+          </div>
           <a
             class="project-zoom cbp-lightbox"
-            href="assets/img/products/arcadia-louvered-shading-system/commercial-arcadia3.jpg"
+            href="assets/img/products/arcadia-louvered-pergola/commercial-arcadia3.jpg"
             data-title="Retractables Awnings 1"
           >
             <i class="fa fa-arrows-alt"></i>
@@ -537,12 +687,17 @@
       <div class="cbp-item retractables-awnings">
         <div class="project-item">
           <div class="project-image">
-            <img src="assets/img/products/arcadia-louvered-shading-system/commercial-arcadia4.jpg" alt="image" />
+            <img
+              src="assets/img/products/arcadia-louvered-pergola/commercial-arcadia4.jpg"
+              alt="image"
+            />
           </div>
-          <div class="project-detail"><h4 class="title">Commercial Arcadia</h4></div>
+          <div class="project-detail">
+            <h4 class="title">Commercial Arcadia</h4>
+          </div>
           <a
             class="project-zoom cbp-lightbox"
-            href="assets/img/products/arcadia-louvered-shading-system/commercial-arcadia4.jpg"
+            href="assets/img/products/arcadia-louvered-pergola/commercial-arcadia4.jpg"
             data-title="Retractables Awnings 1"
           >
             <i class="fa fa-arrows-alt"></i>
@@ -551,33 +706,24 @@
         <!-- /.project-item -->
       </div>
       <!-- /.cbp-item -->
-
-
-
-
-
-
-
-
-
-
-
-
 
       <!-- /Commercial Arcadia -->
-
-
 
       <!-- Residential Arcadia-->
       <div class="cbp-item residential-awnings">
         <div class="project-item">
           <div class="project-image">
-            <img src="/assets/img/products/arcadia-louvered-shading-system/residential-arcadia1.jpg" alt="image" />
+            <img
+              src="assets/img/products/arcadia-louvered-pergola/residential-arcadia1.jpg"
+              alt="image"
+            />
           </div>
-          <div class="project-detail"><h4 class="title">Residential Arcadia</h4></div>
+          <div class="project-detail">
+            <h4 class="title">Residential Arcadia</h4>
+          </div>
           <a
             class="project-zoom cbp-lightbox"
-            href="/assets/img/products/arcadia-louvered-shading-system/residential-arcadia1.jpg"
+            href="assets/img/products/arcadia-louvered-pergola/residential-arcadia1.jpg"
             data-title="Residential 2"
           >
             <i class="fa fa-arrows-alt"></i>
@@ -590,12 +736,17 @@
       <div class="cbp-item residential-awnings">
         <div class="project-item">
           <div class="project-image">
-            <img src="/assets/img/products/arcadia-louvered-shading-system/residential-arcadia2.jpg" alt="image" />
+            <img
+              src="assets/img/products/arcadia-louvered-pergola/residential-arcadia2.jpg"
+              alt="image"
+            />
           </div>
-          <div class="project-detail"><h4 class="title">Residential Arcadia</h4></div>
+          <div class="project-detail">
+            <h4 class="title">Residential Arcadia</h4>
+          </div>
           <a
             class="project-zoom cbp-lightbox"
-            href="/assets/img/products/arcadia-louvered-shading-system/residential-arcadia2.jpg"
+            href="assets/img/products/arcadia-louvered-pergola/residential-arcadia2.jpg"
             data-title="Residential 2"
           >
             <i class="fa fa-arrows-alt"></i>
@@ -608,12 +759,17 @@
       <div class="cbp-item residential-awnings">
         <div class="project-item">
           <div class="project-image">
-            <img src="/assets/img/products/arcadia-louvered-shading-system/residential-arcadia3.jpg" alt="image" />
+            <img
+              src="assets/img/products/arcadia-louvered-pergola/residential-arcadia3.jpg"
+              alt="image"
+            />
           </div>
-          <div class="project-detail"><h4 class="title">Residential Arcadia</h4></div>
+          <div class="project-detail">
+            <h4 class="title">Residential Arcadia</h4>
+          </div>
           <a
             class="project-zoom cbp-lightbox"
-            href="/assets/img/products/arcadia-louvered-shading-system/residential-arcadia3.jpg"
+            href="assets/img/products/arcadia-louvered-pergola/residential-arcadia3.jpg"
             data-title="Residential 2"
           >
             <i class="fa fa-arrows-alt"></i>
@@ -626,12 +782,17 @@
       <div class="cbp-item residential-awnings">
         <div class="project-item">
           <div class="project-image">
-            <img src="/assets/img/products/arcadia-louvered-shading-system/residential-arcadia4.jpg" alt="image" />
+            <img
+              src="assets/img/products/arcadia-louvered-pergola/residential-arcadia4.jpg"
+              alt="image"
+            />
           </div>
-          <div class="project-detail"><h4 class="title">Residential Arcadia</h4></div>
+          <div class="project-detail">
+            <h4 class="title">Residential Arcadia</h4>
+          </div>
           <a
             class="project-zoom cbp-lightbox"
-            href="/assets/img/products/arcadia-louvered-shading-system/residential-arcadia4.jpg"
+            href="assets/img/products/arcadia-louvered-pergola/residential-arcadia4.jpg"
             data-title="Residential 2"
           >
             <i class="fa fa-arrows-alt"></i>
@@ -683,6 +844,48 @@
 <script type="text/javascript" src="assets/js/validate.js"></script>
 <script type="text/javascript" src="assets/js/animsition.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
+
+<script>
+        $('.responsive').slick({
+          dots: false, // change to true when wish to make active
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+        </script>
+
 
 <!-- Revolution Slider -->
 <script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>

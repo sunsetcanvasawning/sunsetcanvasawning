@@ -19,7 +19,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'> -->
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -982,6 +988,145 @@
 
 <div class="bwp-spacer" data-desktop="90" data-mobi="70" data-smobi="40"></div>
 
+<style>
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  h2 {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  /* .slick-dots {
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+  .slick-dots li {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .slick-dots li.slick-active button {
+    background-color: black;
+  }
+  .slick-dots li button {
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    background-color: #999;
+    border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .slick-dots li :hover {
+    background-color: black;
+  } */
+
+  /* Custom Arrow */
+  /* .prev {
+    color: #999;
+    position: absolute;
+    top: 38%;
+    left: -2em;
+    font-size: 1.5em;
+  }
+  .prev :hover {
+    cursor: pointer;
+    color: black;
+  }
+
+  .next {
+    color: #999;
+    position: absolute;
+    top: 38%;
+    right: -2em;
+    font-size: 1.5em;
+  }
+  .next :hover {
+    cursor: pointer;
+    color: black;
+  }
+
+  @media screen and (max-width: 800px) {
+    .next {
+      display: none !important;
+    }
+  } */
+</style>
+
+<div id="shade-fabrics" class="bwp-container">
+  <div class="bwp-row">
+    <div class="bwp-col-12 col">
+      <div class="bwp-heading">
+        <h2 class="bwp-heading text-center">VENDORS</h2>
+        <div class="bwp-line center margin-bottom-40"></div>
+      </div>
+      <div class="heroSlider-fixed">
+        <div class="overlay"></div>
+        <!-- Slider -->
+        <div class="slider responsive">
+          <div>
+            <a href="infinity-canopy-system.html">
+              <img
+                style="width: 80%;"
+                src="assets/img/products/infinite-canopy-system/infinity-logo-transparent.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a href="arcadia-louvered-pergola.html">
+              <img
+                src="assets/img/products/arcadia-louvered-shading-system/arcadia-logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <!-- control arrows -->
+        <!-- <div class="prev">
+          <span
+            class="glyphicon glyphicon-chevron-left"
+            aria-hidden="true"
+          ></span>
+        </div>
+        <div class="next">
+          <span
+            class="glyphicon glyphicon-chevron-right"
+            aria-hidden="true"
+          ></span>
+        </div> -->
+      </div>
+
+      <div
+        class="bwp-spacer"
+        data-desktop="0"
+        data-mobi="30"
+        data-smobi="30"
+      ></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bwp-spacer" data-desktop="90" data-mobi="70" data-smobi="40"></div>
+
+
 <section id="features" class="features-section">
     <div class="bwp-container">
         
@@ -1261,6 +1406,48 @@
 <script type="text/javascript" src="assets/js/validate.js"></script>
 <script type="text/javascript" src="assets/js/animsition.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
+
+<script>
+        $('.responsive').slick({
+          dots: false, // change to true when wish to make active
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+        </script>
+
 
 <!-- Revolution Slider -->
 <script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>

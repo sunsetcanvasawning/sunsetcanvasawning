@@ -146,79 +146,197 @@
         ></div>
       </div>
 
-      <div class="bwp-col-12 col">
-        <style>
-          #brochures {
-            display: flex;
-            justify-content: space-around;
-          }
+      <style>
+        #brochures {
+          display: flex;
+          justify-content: space-around;
+        }
 
-          #brochures img {
-            padding-left: 10%;
-            padding-right: 10%;
-          }
-        </style>
+        #brochures img {
+          padding-left: 10%;
+          padding-right: 10%;
+        }
 
-        <div class="bwp-heading">
-          <h2 class="bwp-heading text-center">BROCHURES</h2>
-          <div class="bwp-line center margin-bottom-40"></div>
-        </div>
+        .col4 {
+          width: 33.33333333%;
+          float: left;
+          position: relative;
+        }
+        .transition {
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+        }
+        body .container {
+          width: 70%;
+          margin: 0 auto;
+        }
+        .fx1 .item {
+          margin: 10px 0;
+        }
 
-        <section id="brochures">
-          <div>
-            <a
-              href="assets/documents/infinity-canopy/infinity-canopy-brochure.pdf"
-              ><img
-                src="assets/documents/infinity-canopy/infinity-canopy-brochure-img.png"
-            /></a>
+        /* active on focus for accessibility tab navigation */
+
+        .fx1 .item {
+          padding-left: 5%;
+        }
+        .fx1 .item img {
+          padding: 0 !important;
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+        .fx1 a:hover .item img,
+        .fx1 a:focus .item img {
+          /* opacity: 1; */
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+        .fx1 h4,
+        .fx1 p {
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+        }
+        .fx1 a .item h4 {
+          font-family: "Raleway", sans-serif;
+          font-size: 16px;
+          position: absolute;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          position: absolute;
+          top: 42%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          text-align: center;
+          opacity: 0;
+        }
+        .fx1 a:hover .item h4,
+        .fx1 a:focus .item h4 {
+          opacity: 1;
+        }
+        .fx1 a .item p {
+          font-family: "Raleway", sans-serif;
+          font-size: 8px;
+          position: absolute;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          position: absolute;
+          top: 52%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          text-align: center;
+          opacity: 0;
+        }
+        .fx1 a:hover .item p,
+        .fx1 a:focus .item p {
+          opacity: 1;
+        }
+      </style>
+
+
+<div class="bwp-col-12 col">
+    <div class="bwp-heading">
+      <h2 class="bwp-heading text-center">BROCHURES</h2>
+      <div class="bwp-line center margin-bottom-40"></div>
+    </div>
+
+    <section id="brochures">
+      <div class="fx1">
+        <a href="assets/documents/infinity-canopy/infinity-canopy-brochure.pdf">
+          <div class="item col4">
+            <img
+              class="transition img-responsive"
+              src="assets/documents/infinity-canopy/infinity-canopy-brochure-img.png"
+            />
+            <!-- <h4>Arcadia Brochure</h4> -->
+            <!-- <p>Description</p> -->
           </div>
+        </a>
 
-          <div>
-            <a
-              href="assets/documents/infinity-canopy/infinity-canopy-configuration-options.pdf"
-              ><img
-                src="assets/documents/infinity-canopy/infinity-canopy-configuration-options-img.png"
-            /></a>
+        <a href="assets/documents/infinity-canopy/infinity-canopy-configuration-options.pdf">
+          <div class="item col4">
+            <img
+              class="transition img-responsive"
+              src="assets/documents/infinity-canopy/infinity-canopy-configuration-options-img.png"
+            />
+            <!-- <h4>Arcadia Brochure</h4> -->
+            <!-- <p>Description</p> -->
           </div>
+        </a>
 
-          <div>
-            <a
-              href="assets/documents/infinity-canopy/infinity-canopy-stock-fabrics-and-colors.pdf"
-              ><img
-                src="assets/documents/infinity-canopy/infinity-canopy-stock-fabrics-and-colors-img.png"
-            /></a>
+        <a href="assets/documents/infinity-canopy/infinity-canopy-stock-fabrics-and-colors.pdf">
+          <div class="item col4">
+            <img
+              class="transition img-responsive"
+              src="assets/documents/infinity-canopy/infinity-canopy-stock-fabrics-and-colors-img.png"
+            />
+            <!-- <h4>Arcadia Brochure</h4> -->
+            <!-- <p>Description</p> -->
           </div>
-
-          <div>
-            <a href="assets/documents/infinity-canopy/phifertex-plus-mesh.pdf"
-              ><img
-                src="assets/documents/infinity-canopy/phifertex-plus-mesh-img.png"
-            /></a>
-          </div>
-
-          <div>
-            <a
-              href="assets/documents/infinity-canopy/sunbrella-awning-fabric-card.pdf"
-              ><img
-                src="assets/documents/infinity-canopy/sunbrella-awning-fabric-card-img.png"
-            /></a>
-          </div>
-        </section>
-
-        <div
-          class="bwp-spacer"
-          data-desktop="40"
-          data-mobi="30"
-          data-smobi="30"
-        ></div>
-
-        <div
-          class="bwp-spacer"
-          data-desktop="40"
-          data-mobi="30"
-          data-smobi="30"
-        ></div>
+        </a>
       </div>
+    </section>
+
+    <div
+    class="bwp-spacer"
+    data-desktop="40"
+    data-mobi="30"
+    data-smobi="30"
+  ></div>
+
+      <section id="brochures">
+      <div class="fx1">
+          <a href="assets/documents/infinity-canopy/phifertex-plus-mesh.pdf">
+            <div class="item col4">
+              <img
+                class="transition img-responsive"
+                src="assets/documents/infinity-canopy/phifertex-plus-mesh-img.png"
+              />
+              <!-- <h4>Arcadia Brochure</h4> -->
+              <!-- <p>Description</p> -->
+            </div>
+          </a>
+        
+          <a href="assets/documents/infinity-canopy/sunbrella-awning-fabric-card.pdf">
+            <div class="item col4">
+              <img
+                class="transition img-responsive"
+                src="assets/documents/infinity-canopy/sunbrella-awning-fabric-card-img.png"
+              />
+              <!-- <h4>Arcadia Brochure</h4> -->
+              <!-- <p>Description</p> -->
+            </div>
+          </a>
+      </div>
+    </section>
+
+
+    <div
+    class="bwp-spacer"
+    data-desktop="40"
+    data-mobi="30"
+    data-smobi="30"
+  ></div>
+
+  <div
+    class="bwp-spacer"
+    data-desktop="40"
+    data-mobi="30"
+    data-smobi="30"
+  ></div>
+
+  </div>
+
 
       <div class="bwp-col-12 col">
         <div class="bwp-heading">
