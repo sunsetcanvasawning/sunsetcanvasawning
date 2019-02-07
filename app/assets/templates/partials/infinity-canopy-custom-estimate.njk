@@ -1,0 +1,155 @@
+
+<p class=".span"> </p>
+    <div class="child">
+        <div class="calculator" id="calculator">
+            <label for="width" class="label">Total Width</label><br>
+            <div class="space">
+              <input type="number" min="1" max="100"  class="input" name="width" id="width" width="20" height="20" 
+              onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('calc').click()" />&nbsp;Feet
+            </div>
+        </div>
+
+        <div class="calculator">
+            <label for="length" class="label">Canopy Length</label><br>
+            <div class="space"> 
+               <input type="number" min="1" max="60" class="input" name="length" id="length" 
+               onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('calc').click()"  />&nbsp;Feet<br>  
+            </div> 
+        </div>
+
+        <div class="calculator">
+            <label for="length" class="label">Canopy Width</label><br>
+            <div class="space"> 
+               <input type="number" min="4" max="12" class="input" name="canopyWidth" id="canopyWidth" 
+               onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('calc').click()"  />&nbsp;Feet<br>  
+            </div> 
+        </div>
+
+
+        <div class="button calculator ">
+            <input type="button" id="calc" class="btn" value="calculate" onClick="calculate();" 
+            onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('calc').click()" />
+        </div>
+        
+    </div>
+    <div class="Premium" id="explain">
+       
+    </div>
+    
+
+    <div class="child1">
+        <div class="show" id="show">
+
+        </div>
+    </div>
+    </div>
+   
+
+<script type="text/javascript">
+
+    function calculate(){
+        var width= document.getElementById("width").value;
+        var canopyWidth = document.getElementById("canopyWidth").value;
+
+
+        var ratio = canopyWidth/width;
+        if(ratio >0)
+        {
+            var section=parseInt(Math.ceil((width)/Math.ceil(canopyWidth)));
+            var graphicWidth = 20 * canopyWidth;
+            var length= document.getElementById("length").value;
+            var panels=parseInt(Math.round((length)*12/22.5));
+          
+           // document.getElementById("panels").value=panels;
+            var myTable= "<table class='table' cellspacing='5' >";
+            for (var i=0; i<panels; i++) {
+                myTable+="<tr'>";
+                for(var j=0; j<section; j++){
+                    myTable+="<td class ='graphic_box'>&nbsp;</td>";
+                }
+                myTable+="</tr>";
+
+            }
+            myTable+="</table>";
+              
+            
+            
+            var premFab;
+            var satndFab;
+            if (parseInt(canopyWidth) > parseInt(width) || parseInt(canopyWidth) > 12)
+            {
+                alert('Canopy Width cannot be Greater than 12 or Greater than Total Width');
+                return;
+            }
+			
+            else
+            {
+
+                if(canopyWidth <= 4)
+                {
+                    premFab= (section*panels*140.00);
+                    satndFab= (section*panels*120.00);
+                }
+                else if(canopyWidth >=4 && canopyWidth <=5)
+                {
+                    premFab= (section*panels*150.00);
+                    satndFab= (section*panels*130.00);
+                }
+                else if(canopyWidth>=5 &&   canopyWidth <= 6)
+                {
+                    premFab= (section*panels*180.00);
+                    satndFab= (section*panels*160.00);
+                }
+                else if(canopyWidth>=6 && canopyWidth <= 7)
+                {
+                    premFab= (section*panels*210.00);
+                    satndFab= (section*panels*180.00);
+                }   
+                else if(canopyWidth>=7 && canopyWidth <= 8)
+                {
+                    premFab= (section*panels*240.00);
+                    satndFab= (section*panels*210.00);
+                }
+                else if(canopyWidth>=8 && canopyWidth <= 9)
+                {
+                    premFab= (section*panels*270.00);
+                    satndFab= (section*panels*240.00);
+                }
+                else if(canopyWidth>=9 && canopyWidth <= 10)
+                {
+                    premFab= (section*panels*300.00);
+                    satndFab= (section*panels*270.00);
+                }
+                else if(canopyWidth>=10 && canopyWidth ==11)
+                {
+                    premFab= (section*panels*360.00);
+                    satndFab= (section*panels*300.00);
+                }
+                else
+                {
+                    premFab= (section*panels*420.00);
+                    satndFab= (section*panels*360.00);
+                }
+                document.getElementById("show").innerHTML= myTable;
+            }
+ 
+            var explain= "<p class='fon'><br>You need <b>"+section+"</b> Sections/Rows of Infinity Canopy with <b>"+panels+"</b> panels each. The estimate for your canopy is:  <br><br><b> $"+premFab+".00 with Premium Fabric* <br>$"+satndFab+".00 with Standard Fabric<br><br>*Add 20% for Serge Ferrari fabric. <br>*Add 20% for Sunbrella fire rated fabric and fabrics marked with astric* (see fabric card)<br><br>Optional Items: Need one not both.<br>Magnetic Latch, $65.00 ea.<br> Ball Bearing Pulley System, $65 ea.</b></p>";
+            document.getElementById("explain").innerHTML= explain;  
+        }
+        else
+        {
+           document.getElementById("explain").innerHTML = "<p class='fon'><br> Canopy Width Must Be greater Than Zero</p>";
+        }
+
+        var x = document.getElementsByClassName('graphic_box')
+        var w = 10 * canopyWidth + 'px';
+        for(i=0; i<x.length;i++)
+        {
+          x[i].style.width = w;
+        }
+    }
+</script>
