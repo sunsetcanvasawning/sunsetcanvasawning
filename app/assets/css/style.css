@@ -312,6 +312,8 @@
 	top: 100%;
 	z-index: 99999;
 	background-color: #252525;
+	max-height: 400px;
+	overflow-y: auto;
 }
 
 #main-nav-mobi ul {
