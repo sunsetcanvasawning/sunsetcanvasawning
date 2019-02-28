@@ -382,7 +382,7 @@
 	position: relative;
 	background: transparent;
 	cursor: pointer;
-	margin: 9px 0;
+	margin: -41px 0;
 	width: 26px;
 	height: 16px;
     -webkit-transition: all ease .238s;
@@ -2372,7 +2372,10 @@
 	display: none;
 }
 
-
+#logo-mobile-only {
+	visibility: hidden;
+	/* visibility: visible; */
+}
 
 
 /* Media Queries
@@ -2381,9 +2384,11 @@
 	.bwp-clients .owl-theme .owl-controls .owl-buttons div { display: none; }
 }
 
+
 @media only screen and (min-width: 1930px) {
 	.parallax { background-size: cover; }
 }
+
 
 @media only screen and (max-width: 991px) {
 	.mobile-product-quote-btn {
@@ -2432,7 +2437,16 @@
 
 	/* Inner Pages */
 	#top-bar,
-	#sidebar { display: none; }
+	#sidebar { 
+		/* display: none;  */
+	}
+
+	#logo-mobile-only {
+		/* visibility: hidden; */
+		visibility: visible;
+	}
+
+
 	/*#main-content { padding: 0 0 70px 0 }*/
 	#featured-title { margin-bottom: 50px; }
 	#featured-title .featured-title-inner-wrap { padding: 40px 0; }
