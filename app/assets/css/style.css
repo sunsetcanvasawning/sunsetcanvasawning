@@ -2377,6 +2377,10 @@
 	/* visibility: visible; */
 }
 
+.mobile-viewpoint-only {
+	display: none;
+}
+
 
 /* Media Queries
 -------------------------------------------------------------- */
@@ -2444,6 +2448,14 @@
 	#logo-mobile-only {
 		/* visibility: hidden; */
 		visibility: visible;
+	}
+
+	.desktop-viewpoint-only {
+		display: none;
+	}
+
+	.mobile-viewpoint-only {
+		display: inline;
 	}
 
 
