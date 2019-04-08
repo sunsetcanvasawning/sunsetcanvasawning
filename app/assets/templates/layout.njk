@@ -247,6 +247,7 @@
     <a class="back-to-top">TOP</a>
 
     <!-- Javascript -->
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/easing.js"></script>
     <script type="text/javascript" src="assets/js/matchMedia.js"></script>
@@ -300,6 +301,27 @@
           // instead of a settings object
         ]
       })
+
+      let images = [...document.querySelectorAll('.lazy-image')];
+
+      const interactSettings = {
+      root: document.querySelector('.center'),
+      rootMargin: '0px 0px 200px 0px' };
+
+
+      function onIntersection(imageEntites) {
+      imageEntites.forEach(image => {
+          if (image.isIntersecting) {
+          observer.unobserve(image.target);
+          image.target.src = image.target.dataset.src;
+          image.target.onload = () => image.target.classList.add('loaded');
+          }
+      });
+      }
+
+    let observer = new IntersectionObserver(onIntersection);
+
+    images.forEach(image => observer.observe(image));
     </script>
 
     <!-- Revolution Slider -->
