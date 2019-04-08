@@ -40,6 +40,7 @@
  * Bottom
  * Go Top Button
  * Fixed Button - Recent Work Galley
+ * Lazy Load
  * Shortcodes
      * Spacer
      * Button
@@ -1497,6 +1498,18 @@
 	box-shadow: 0  0;
 }
 
+
+/* Lazy Load
+-------------------------------------------------------------- */
+img.lazy-image {
+  opacity: 0.1;
+  will-change: opacity;
+  transition: all 0.3s;
+}
+
+img.lazy-image.loaded {
+  opacity: 1;
+}
 
 
 /* Shortcodes
