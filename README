@@ -1,0 +1,5 @@
+nvm use 8.12.0
+
+npm run gulp
+
+npm run gulp build
