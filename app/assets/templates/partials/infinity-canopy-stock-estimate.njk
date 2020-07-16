@@ -1,10 +1,10 @@
 
 <p class=".span"> </p>
     <div class="child">
-        <div class="calculator" id="calculator">
-            <label for="width" class="label">Total Width</label><br>
+        <div class="calculator_stock" id="calculator_stock">
+            <label for="widthStock" class="label">Total Width</label><br>
             <div class="space">
-			<select class="input" name="width" id="width">
+			<select class="input" name="widthStock" id="widthStock">
 			<option value="5"> 5</option>  
 			<option value="10">10</option>  
 			<option value="15">15</option>  
@@ -29,39 +29,39 @@
             </div>
         </div>
 
-        <div class="calculator">
+        <div class="calculator_stock">
             <label for="length" class="label">Canopy Length</label><br>
             <div class="space"> 
                <input style="width: 50%;" type="number" min="1" max="60" class="input" name="length" id="length" 
                onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()"  />&nbsp;Feet<br>  
+                        document.getElementById('calcStock').click()"  />&nbsp;Feet<br>  
             </div> 
         </div>
 
-        <div class="calculator">
+        <div class="calculator_stock">
             <label for="length" class="label">Canopy Width</label><br>
             <div class="space"> 
-               <name="canopyWidth" id="canopyWidth" 
+               <name="canopyWidthStock" id="canopyWidthStock" 
                onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()"  />&nbsp;5 Feet<br>  
+                        document.getElementById('calcStock').click()"  />&nbsp;5 Feet<br>  
             </div> 
         </div>
 
 
-        <div class="button calculator ">
-            <input type="button" id="calc" class="btn" value="Calculate" onClick="calculate();" 
+        <div class="button calculator_stock ">
+            <input type="button" id="calcStock" class="btn" value="Calculate" onClick="calculateStock();" 
             onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('calc').click()" />
+                        document.getElementById('calcStock').click()" />
         </div>
         
     </div>
-    <div class="Premium" id="explain">
+    <div class="Premium" id="explainStock">
        
     </div>
     
 
     <div class="child1">
-        <div class="show" id="show">
+        <div class="showStock" id="showStock">
 
         </div>
     </div>
@@ -69,36 +69,36 @@
 
 <script type="text/javascript">
 
-    function calculate(){
-        var width= document.getElementById("width").value;
-        var canopyWidth = document.getElementById("canopyWidth").value=5;
+    function calculateStock(){
+        var widthStock= document.getElementById("widthStock").value;
+        var canopyWidthStock = document.getElementById("canopyWidthStock").value=5;
 
 
-        var ratio = canopyWidth/width;
+        var ratio = canopyWidthStock/widthStock;
         if(ratio >0)
         {
-            var section=parseInt(Math.ceil((width)/Math.ceil(canopyWidth)));
-            var graphicWidth = 20 * canopyWidth;
+            var section=parseInt(Math.ceil((widthStock)/Math.ceil(canopyWidthStock)));
+            var graphicWidthStock = 20 * canopyWidthStock;
             var length= document.getElementById("length").value;
             var panels=parseInt(Math.round((length)*12/22.5));
           
            // document.getElementById("panels").value=panels;
-            var myTable= "<table class='table' cellspacing='5' >";
+            var myTableStock= "<table class='table' cellspacing='5' >";
             for (var i=0; i<panels; i++) {
-                myTable+="<tr'>";
+                myTableStock+="<tr'>";
                 for(var j=0; j<section; j++){
-                    myTable+="<td class ='graphic_box'>&nbsp;</td>";
+                    myTableStock+="<td class='graphic_box_stock'>&nbsp;</td>";
                 }
-                myTable+="</tr>";
+                myTableStock+="</tr>";
 
             }
-            myTable+="</table>";
+            myTableStock+="</table>";
               
             
             
             var premFab;
             var satndFab;
-            if (parseInt(canopyWidth) > parseInt(width) || parseInt(canopyWidth) > 12)
+            if (parseInt(canopyWidthStock) > parseInt(widthStock) || parseInt(canopyWidthStock) > 12)
             {
                 alert('Total Width Cannot Be Less Than 5 Feet');
                 return;
@@ -107,27 +107,27 @@
             else
             {
 
-                if(canopyWidth >=4 && canopyWidth <=5)
+                if(canopyWidthStock >=4 && canopyWidthStock <=5)
                 {
                     premFab= (section*panels*130.00-section);
                     satndFab= (section*panels*100.00-section);
                 }
-                document.getElementById("show").innerHTML= myTable;
+                document.getElementById("showStock").innerHTML= myTableStock;
             }
  
-            var explain= "<p class='fon'><br>You need <b>"+section+"</b> Sections/Rows of Infinity Canopy with <b>"+panels+"</b> panels each. The estimate for your canopy is:  <br><br><b> $"+premFab+".00 with Premium Fabric <br>$"+satndFab+".00 with Standard Fabric<br><br>Optional Items: Need one not both.<br>Magnetic Latch, $65.00 ea.<br> Ball Bearing Pulley System, $65 ea.</b></p>";
-            document.getElementById("explain").innerHTML= explain;  
+            var explainStock= "<p class='font_stock'><br>You need <b>"+section+"</b> section(s)/row(s) of Infinity Canopy with <b>"+panels+"</b> panels each. The estimate for your canopy is:  <br><br><b> $"+premFab+".00 with Premium Fabric <br>$"+satndFab+".00 with Standard Fabric<br><br>Optional Items: Need one not both.<br>Magnetic Latch, $65.00 ea.<br> Ball Bearing Pulley System, $65 ea.</b></p>";
+            document.getElementById("explainStock").innerHTML= explainStock;  
         }
         else
         {
-           document.getElementById("explain").innerHTML = "<p class='fon'><br> Canopy Width Must Be greater Than Zero</p>";
+           document.getElementById("explainStock").innerHTML = "<p class='fon'><br> Canopy Width Must Be greater Than Zero</p>";
         }
 
-        var x = document.getElementsByClassName('graphic_box')
-        var w = 10 * canopyWidth + 'px';
-        for(i=0; i<x.length;i++)
+        var graphicBoxStock = document.getElementsByClassName('graphic_box_stock')
+        var calculateddWidthStock = 10 * canopyWidthStock + 'px';
+        for(let i = 0; i < graphicBoxStock.length; i++)
         {
-          x[i].style.width = w;
+          graphicBoxStock[i].style.width = calculateddWidthStock;
         }
     }
 </script>

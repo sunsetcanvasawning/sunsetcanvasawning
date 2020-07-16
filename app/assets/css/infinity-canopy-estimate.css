@@ -1,28 +1,25 @@
-.input{
-    border-radius: 1px;
-    font-weight: bold;
-    width: 45px;
-
+.input {
+  border-radius: 1px;
+  font-weight: bold;
+  width: 45px;
 }
-.space{
+.space {
   /*  margin-left: 25px;*/
-    /* Decorative .. */
-    min-height: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+  /* Decorative .. */
+  min-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.main
-{
-    /* Try setting this to 400px or something */
-    display: table;
-    height: 100px;
-    width: 100%;
-    table-layout: fixed;
+.main {
+  /* Try setting this to 400px or something */
+  display: table;
+  height: 100px;
+  width: 100%;
+  table-layout: fixed;
 }
-.show{
-    /* Decorative .. */
-    min-height: 40px;
+.show {
+  /* Decorative .. */
+  min-height: 40px;
 }
 
 /* .btn
@@ -38,58 +35,61 @@
 /* body{
     margin: 20px;
 } */
-.child
-{
-    display: -webki-flex;
-    display: flex;
-    height: 70px;
-    width: 600px;    
+.child {
+  display: -webki-flex;
+  display: flex;
+  height: 70px;
+  width: 600px;
 }
-.calculator
- {
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    width: 200px;
-    margin: 10px;
-    height: 100px;     
-}
-
-.child1
-{
-    display: table-cell;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    margin: 20px;
-    align-items: center;
-}
-.table{
-    border-spacing: 3px;
-    -webkit-border-horizontal-spacing: 5px;
-    -webkit-border-vertical-spacing: 1px;
-}
-.Premium
-{
-    clear: both;
+.calculator_custom,
+.calculator_stock {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro',
+    'DejaVu Sans Condensed', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  width: 200px;
+  margin: 10px;
+  height: 100px;
 }
 
-/*Here You change the font size*/  
-.fon{
+.child1 {
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+}
+.table {
+  border-spacing: 3px;
+  -webkit-border-horizontal-spacing: 5px;
+  -webkit-border-vertical-spacing: 1px;
+}
+.Premium {
+  clear: both;
+}
+
+/*Here You change the font size*/
+.font_stock {
+  font-family: Arial;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.font_custom {
+    margin-top: 100px;
     font-family: Arial;
     font-size: 15px;
-    margin-top: 40px;
 }
 
-.graphic_box
-{
+
+.graphic_box_stock, .graphic_box_custom {
   /*  width: var(--element-width);
   */
-    width: 25px;
-    height:20px;
-    /* border-width:10px; */
-    /* border-color: black; */
-    background-color: #1b6d85;
+  width: 25px;
+  height: 20px;
+  /* border-width:10px; */
+  /* border-color: black; */
+  background-color: #1b6d85;
 }
-
