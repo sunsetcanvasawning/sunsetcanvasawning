@@ -1746,7 +1746,7 @@ img.lazy-image.loaded {
     background-color: #f7f7f7;
     border: 1px solid #f1f1f1;
     position: relative;
-    text-align: center;
+    /* text-align: center; */
     padding: 66px 40px 37px;
 }
 
